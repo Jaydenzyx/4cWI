@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer {
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    height: 200px;
+}
+
+    .left{
+        padding: 30px;
+    }
+
+    .bluebox{
+        height: 140px;
+        width: 140px;
+        background-color: lightblue;
+    }
+
+    .right{
+        display: flex;
+    }
+
+    .greenbox{
+        background-color: lightgreen;
+        margin: 10px;
+        height: 140px;
+        width: 140px;
+        position: relative;
+    }
+
+    .orangebox{
+        background-color: orange;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .purple{
+        position: absolute;
+        background-color: purple;
+        height: 300px;
+        width: 300px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
