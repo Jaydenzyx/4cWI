@@ -19,6 +19,7 @@ const checkage = people.filter((person) => person.age >= 18);
 console.log(checkage);
 const sortetlsit = people.sort((person1 , person2) => person2.age  - person1.age);
 console.log(sortetlsit);
+// @ts-ignore
 const findperson = people.find((person) => person.age === 17);
 console.log(findperson);
 const averageage = people.reduce((total,person) => total +person.age/people.length,0);
