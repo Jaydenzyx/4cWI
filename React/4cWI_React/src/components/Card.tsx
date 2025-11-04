@@ -8,8 +8,7 @@ type Props = {
 function Card({title, description}: Props){
     return(
 
-        <div className="card">
-            <div>I am a Card</div>
+        <div className="card border bg-green-400">
             <h1>{title}</h1>
             <p>{description}</p>
 
