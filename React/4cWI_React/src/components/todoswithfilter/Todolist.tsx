@@ -19,9 +19,8 @@ export default function Todolist({search}: Props) {
             })},[])
 
     useEffect(() => {
-        console.log("searchchanged")
         let result =todos.filter((todo:Todo) => todo.title.includes(search));
-        console.log(result)
+        setfilteredtodos(result);
         }, [search]);
 
 
@@ -30,7 +29,7 @@ export default function Todolist({search}: Props) {
     return (
     <div className="grid grid-cols-5 gap-2">
         {filteredtodos.map((todo: Todo) => (
-            <TodoCard key={todo.id} completed={todo.completed} title={todo.title} id={todo.id} />
+            <TodoCard completed={todo.completed} title={todo.title} id={todo.id} key={todo.id}/>
         ))}
     </div>
     );

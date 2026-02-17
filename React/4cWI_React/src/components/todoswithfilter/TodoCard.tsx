@@ -9,7 +9,7 @@ type Props = {
 };
 export default function TodoCard({title, id, completed}: Props) {
     return (
-<div className={`border p-4 ${completed ? 'bg-green-500' : 'bg-red-500'}`}>
+<div className={`border p-4 rounded-2xl ${completed ? 'bg-green-500' : 'bg-red-500'}`}>
     <div>{title}</div>
     <div>{id}</div>
     <div>{completed?"done":"open"}</div>
